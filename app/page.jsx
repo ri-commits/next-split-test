@@ -1,4 +1,4 @@
-"use client";
+import Movie from "./Movie";
 
 export default async function Home() {
   const data = await fetch(
@@ -9,6 +9,11 @@ export default async function Home() {
   return (
     <main>
       <h1 className="">Hello next 13</h1>
+      {res.results.map((movie) => (
+        <div>
+          <h1>{movie.title}</h1>
+        </div>
+      ))}
     </main>
   );
 }
