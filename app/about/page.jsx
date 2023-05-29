@@ -3,7 +3,6 @@ export const metadata = {
 };
 
 const About = () => {
-  throw new Error("failed to load");
   return <div>About page</div>;
 };
 
