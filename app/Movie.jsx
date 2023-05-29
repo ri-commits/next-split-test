@@ -3,7 +3,6 @@ import Image from "next/image";
 
 const Movie = ({ title, id, poster_path, release_date }) => {
   const image_path = "https://image.tmdb.org/t/p/original";
-  console.log(poster_path);
   return (
     <div>
       <h1>{title}</h1>
